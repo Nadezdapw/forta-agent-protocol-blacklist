@@ -1,8 +1,9 @@
-# High Gas Agent
+Please add me as a Agent Developer [Published] on Discord, my username is AlkH#9569
+# Forta Agent Protocol Blacklist
 
 ## Description
 
-This agent detects transactions with high gas consumption
+This agent detects when blakc listed address trying to move funds to L2 (MATIC, Optimism or Arbitrum)
 
 ## Supported Chains
 
@@ -13,15 +14,11 @@ This agent detects transactions with high gas consumption
 
 Describe each of the type of alerts fired by this agent
 
-- FORTA-1
-  - Fired when a transaction consumes more gas than 1,000,000 gas
-  - Severity is always set to "medium" (mention any conditions where it could be something else)
+- FORTA-2
+  - Fired when a transaction contains blacklisted address and address of one of the bridges (MATIC, Optimism or Arbitrum)
+  - Severity is always set to "high" (mention any conditions where it could be something else)
   - Type is always set to "suspicious" (mention any conditions where it could be something else)
-  - Mention any other type of metadata fields included with this alert
 
 ## Test Data
-
-The agent behaviour can be verified with the following transactions:
-
-- 0x1b71dcc24657989f920d627c7768f545d70fcb861c9a05824f7f5d056968aeee (1,094,700 gas)
-- 0x8df0579bf65e859f87c45b485b8f1879c56bc818043c3a0d6870c410b5013266 (2,348,226 gas)
+https://etherscan.io/tx/0x994a1852a648adc68fca4cf3897b49684a2751c94303556e1805b2a893b656cb
+https://etherscan.io/tx/0x8ac173b486dd1a34ba9a6003888173b1acc2188d34481a9b486169ddb9547fc5
