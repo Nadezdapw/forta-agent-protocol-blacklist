@@ -1,0 +1,1 @@
+# forta-agent-protocol-blacklist
